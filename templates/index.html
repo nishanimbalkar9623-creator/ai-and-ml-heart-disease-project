@@ -323,11 +323,9 @@ function callEmergency() {
       <h3>Full Documentation</h3>
       <p>Detailed API reference, parameter guide, and integration docs for developers building on this platform.</p>
     </div>
-    <div class="feat-card">
-      <div class="feat-icon">🚨</div>
-      <h3>Emergency Response</h3>
-      <p>Integrated emergency protocols with one-tap ambulance access and symptom recognition guides.</p>
-    </div>
+    <div class="sticky-em">
+  <button onclick="callEmergency()"><b>🚨 Emergency Call</b></button>
+</div>
     <div class="feat-card">
       <div class="feat-icon">📝</div>
       <h3>Clinical Blog</h3>
@@ -420,7 +418,7 @@ function callEmergency() {
           <div class="field"><label>Major Vessels (Fluoroscopy) <span class="req">*</span></label><select id="ca" required><option value="" disabled selected>Select count</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
         </div>
         <div class="form-row">
-          <div class="field field-full"><label>Thalassemia <span class="req">*</span></label><select id="thal" required><option value="" disabled selected>Select thalassemia type</option><option value="1">Normal (1)</option><option value="2">Fixed Defect (2)</option><option value="3">Reversible Defect (3)</option></select></div>
+          <div class="field field-full"><label>Thalassemia <span class="req">*</span></label><select id="thal" required><option value="" disabled selected>Select thalassemia type</option><option value="1">Normal (1)</option><option value="2">Fixed Defect (2)</option><option value="3">Reversible Defect (0)</option></select></div>
         </div>
         <div class="form-actions">
           <button type="reset" class="btn-reset">Clear Form</button>
